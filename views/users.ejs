@@ -1,0 +1,12 @@
+<%- include('./includes/header.ejs')%>
+    <h1>
+        User List
+    </h1>
+    <ul>
+        <% user_list.forEach(element=> { %>
+            <li>
+                <%= element.user_name %>
+            </li>
+            <% }); %>
+    </ul>
+    <%- include('./includes/footer.ejs')%>
